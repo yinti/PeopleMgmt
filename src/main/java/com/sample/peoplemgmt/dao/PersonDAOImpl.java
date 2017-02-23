@@ -33,6 +33,8 @@ public class PersonDAOImpl implements PersonDAO {
 
 	@Override
 	public void updatePerson(Person p) {
+		
+		logger.info("Inside Update person");
 		Session session = this.sessionFactory.getCurrentSession();
 		session.update(p);
 		logger.info("Person updated successfully, Person Details="+p);
