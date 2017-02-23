@@ -24,6 +24,8 @@ public class PersonDAOImpl implements PersonDAO {
 
 	@Override
 	public void addPerson(Person p) {
+		
+		logger.info("Inside Add person");
 		Session session = this.sessionFactory.getCurrentSession(); 
 		session.persist(p);
 		logger.info("Person saved successfully, Person Details="+p);
