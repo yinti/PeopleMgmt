@@ -43,6 +43,8 @@ public class PersonDAOImpl implements PersonDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Person> listPersons() {
+		
+		logger.info("Inside list Person");
 		Session session = this.sessionFactory.getCurrentSession();
 		List<Person> personsList = session.createQuery("from Person").list();
 		for(Person p : personsList){
