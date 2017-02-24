@@ -46,7 +46,7 @@
 
 </head>
 <body>
-	<h1>Login to AnsibleGenerated Cloud App</h1>
+	<h1>Login to Ansible Cloud App</h1>
 
 	<c:url var="loginAction" value="/loginAction"></c:url>
 
